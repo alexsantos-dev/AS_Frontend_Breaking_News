@@ -10,6 +10,7 @@ export function Navbar(){
                     <input type="text" name="" id="" />
                 </div>
                 <img src={Logo} alt="Logo Breaking News" />
+                <button>Entrar</button>
             </nav>
         </>
     )
