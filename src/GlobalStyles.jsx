@@ -1,4 +1,7 @@
-/* [Paleta de cores (degradê 0-4)]
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+ /* [Paleta de cores (degradê 0-4)]
   0 - #1cb6fc
   1 - #23a0fc
   2 - #2c80fc
@@ -20,4 +23,5 @@ body {
   max-width: 100vw;
   height: 100vh;
   background-color: #f5f5f5;
-}
+} 
+`;

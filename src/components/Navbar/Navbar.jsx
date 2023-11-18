@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Logo from "../../assets/LogoBN.png";
-import { Nav, ImageLogo, LoginBtn, Searcher } from "./NavbarStyled";
+import { Nav, ImageLogo, LoginBtn, Searcher } from "./Navbar.styles";
 
 export function Navbar() {
   const [onFocus, setOnFocus] = useState(false);
@@ -8,7 +8,6 @@ export function Navbar() {
     <>
       <Nav>
         <Searcher className="input-search-space" onFocus={onFocus}>
-          <i className="bi bi-search"></i>
           <input
             type="text"
             name="searcher"
@@ -17,6 +16,7 @@ export function Navbar() {
             onFocus={() => setOnFocus(true)}
             onBlur={() => setOnFocus(false)}
           />
+          <i className="bi bi-search"></i>
         </Searcher>
         <ImageLogo src={Logo} alt="Logo Breaking News" />
         <LoginBtn>Entrar</LoginBtn>
