@@ -45,7 +45,8 @@ export const Searcher = styled.div`
         }
 
         &:focus{
-            outline: 1px solid;
+            outline: inset 1px #1cb6fc;
+            /* outline: 1px solid; */
             font-weight: 300;
         }
     }
@@ -55,7 +56,7 @@ export const Searcher = styled.div`
     right: 0;
     z-index: 10;
     border: none;
-    color: #0bade3c7;
+    color: #1cb6fc;
     background-color: #fff;
     border-radius: .4rem;
     padding: .4rem .9rem .3rem .9rem;
@@ -63,7 +64,7 @@ export const Searcher = styled.div`
 `
 
 export const LoginBtn = styled.button`  
-    background: linear-gradient(to bottom, #55f0ff,#55d2ff) ;
+    background: linear-gradient(to bottom, #1cb6fc, #3d4cfc) ;
     padding: .6rem 1.6rem;
     border: none;
     font-size: 1.1rem;
@@ -73,6 +74,6 @@ export const LoginBtn = styled.button`
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     &:hover{
-        background: #55f0ff;
+        background: #1cb6fc;
     }
 `
