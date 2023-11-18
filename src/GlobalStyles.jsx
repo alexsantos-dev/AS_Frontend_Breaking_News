@@ -18,10 +18,17 @@ export const GlobalStyles = createGlobalStyle`
   font-family: 'Poppins', sans-serif;
 }
 
+
 html,
 body {
+  scroll-behavior: smooth;
   max-width: 100vw;
   height: 100vh;
   background-color: #f5f5f5;
+
+ 
 } 
+
+
+
 `;

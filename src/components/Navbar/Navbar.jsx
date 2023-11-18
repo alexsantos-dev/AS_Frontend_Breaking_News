@@ -21,7 +21,6 @@ export function Navbar() {
         <ImageLogo src={Logo} alt="Logo Breaking News" />
         <LoginBtn>Entrar</LoginBtn>
       </Nav>
-      <h1>Aoba Garai!</h1>
     </>
   );
 }

@@ -1,17 +1,14 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  position: relative;
   display: flex;
-  /* justify-content: space-evenly; */
   align-items: center;
   justify-content: space-between;
-  /* gap: 24rem; */
-  width: 100%;
-  position: fixed;
+  width: 100vw;
+  /* position: fixed; */
   padding: 0.7rem 2.5rem;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #fff;
   z-index: 1;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
