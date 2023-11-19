@@ -11,7 +11,8 @@ export const Nav = styled.nav`
   right: 0;
   background-color: #fff;
   z-index: 1;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 4rem;
 `;
 
 export const ImageLogo = styled.img`
