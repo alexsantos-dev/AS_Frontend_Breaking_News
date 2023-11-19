@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { CardContainer } from "./Card.styles";
 import { CardBodyText, CardBodyImg, CardBodyIcons } from "./Card.styles";
 import { CardBodyContainer } from "./Card.styles";
+import { TextLimit } from "../TextLimit/TextLimit";
 
 export function Card(props) {
   return (
@@ -9,7 +10,7 @@ export function Card(props) {
       <CardBodyContainer>
         <CardBodyText>
           <h2>{props.title}</h2>
-          <p>{props.text}</p>
+          <TextLimit text={props.text} limit={150} />
           <hr />
           <CardBodyIcons>
             <div>
