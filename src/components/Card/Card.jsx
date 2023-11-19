@@ -3,27 +3,27 @@ import { CardContainer } from "./Card.styles";
 import { CardBodyText, CardBodyImg, CardBodyIcons } from "./Card.styles";
 import { CardBodyContainer } from "./Card.styles";
 
-export function Card({ news }) {
+export function Card(props) {
   return (
     <CardContainer>
       <CardBodyContainer>
         <CardBodyText>
-          <h2>{news.title}</h2>
-          <p>{news.text}</p>
+          <h2>{props.title}</h2>
+          <p>{props.text}</p>
           <hr />
           <CardBodyIcons>
             <div>
               <i className="bi bi-hand-thumbs-up"></i>
-              <span>{news.likes}</span>
+              <span>{props.likes}</span>
             </div>
             <div>
               <i className="bi bi-chat"></i>
-              <span>{news.comments}</span>
+              <span>{props.comments}</span>
             </div>
           </CardBodyIcons>
         </CardBodyText>
         <CardBodyImg>
-          <img src={news.image} alt="Banner da notícia" />
+          <img src={props.banner} alt="Banner da notícia" />
         </CardBodyImg>
       </CardBodyContainer>
     </CardContainer>
@@ -31,11 +31,9 @@ export function Card({ news }) {
 }
 
 Card.propTypes = {
-  news: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    likes: PropTypes.number.isRequired,
-    comments: PropTypes.number.isRequired,
-  }).isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  banner: PropTypes.string.isRequired,
+  likes: PropTypes.number.isRequired,
+  comments: PropTypes.number.isRequired,
 };
