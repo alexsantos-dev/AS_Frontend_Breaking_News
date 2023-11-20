@@ -2,16 +2,20 @@ import PropTypes from "prop-types";
 import { CardContainer } from "./Card.styles";
 import { CardBodyText, CardBodyImg, CardBodyIcons } from "./Card.styles";
 import { CardBodyContainer } from "./Card.styles";
-import { TextLimit } from "../TextLimit/TextLimit";
+import { TextLimit } from "../Limit/TextLimit";
+import { TitleLimit } from "../Limit/TitleLimit";
 
 export function Card(props) {
   return (
     <CardContainer>
       <CardBodyContainer>
         <CardBodyText>
-          <h2>{props.title}</h2>
-          <TextLimit text={props.text} limit={150} />
-          <hr />
+          <h2>
+            {<TitleLimit className="title" title={props.title} limit={30} />}
+          </h2>
+
+          <TextLimit className="text" id="text" text={props.text} limit={100} />
+
           <CardBodyIcons>
             <div>
               <i className="bi bi-hand-thumbs-up"></i>
