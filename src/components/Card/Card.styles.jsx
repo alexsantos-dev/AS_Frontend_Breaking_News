@@ -1,65 +1,58 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.section`
-  position: relative;
-  max-width: 100%;
-  padding: 1.6rem;
-  background: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 0.4rem;
-`;
-
-export const CardBodyContainer = styled.section`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  gap: 0.8rem;
-`;
-
-export const CardBodyText = styled.article`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 100%;
+  gap: 1rem;
+  max-width: 100%;
 
-  h2 {
-    width: 250px;
-    font-size: 2rem;
-    /* margin-bottom: 1rem; */
-  }
-
-  p.text {
-    /* text-align: justify; */
-    font-weight: 100;
-    letter-spacing: 0.0625rem;
-    line-height: 1.5;
-    /* margin-bottom: 1.2rem; */
-  }
+  box-shadow: rgba(50, 50, 105, 0.149) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border-radius: 0.3rem;
+  background-color: #fff;
 `;
-
-export const CardBodyIcons = styled.section`
+export const CardBody = styled.article`
   display: flex;
-  /* margin-top: 1.2rem; */
-  bottom: 0;
-  padding-bottom: 0.8rem;
+  width: 100%;
+  height: 100%;
 
   div {
-    margin-right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+  }
 
-    i {
-      margin-right: 0.25rem;
-    }
+  img {
+    width: 40%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 0.3rem 0.3rem 0;
   }
 `;
 
-export const CardBodyImg = styled.article`
+export const CardHeader = styled.article`
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding-bottom: 1.4rem;
+  font-size: ${(props) => (props.top ? "1.5rem" : ".9rem")};
 
-  img {
+  h2 {
+    margin-bottom: 1rem;
+    font-size: ${(props) => (props.top ? "3rem" : "1.1rem")};
     width: 100%;
-    height: 60%;
-    border-radius: 0.4rem;
+  }
+`;
+
+export const CardFooter = styled.article`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  section {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
   }
 `;
