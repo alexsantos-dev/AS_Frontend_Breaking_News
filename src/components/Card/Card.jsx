@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { TextLimit } from "../Limit/TextLimit";
 import { CardBody, CardContainer, CardFooter, CardHeader } from "./Card.styles";
 
@@ -29,3 +30,12 @@ export function Card(props) {
     </CardContainer>
   );
 }
+
+Card.propTypes = {
+  top: PropTypes.bool,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  likes: PropTypes.array,
+  comments: PropTypes.array,
+  banner: PropTypes.string.isRequired,
+};

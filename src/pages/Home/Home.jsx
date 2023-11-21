@@ -10,11 +10,16 @@ export function Home() {
   const [topPost, setTopPost] = useState({});
 
   async function findPost() {
-    const postsResponse = await getAllNews();
-    setPosts(postsResponse.data.results);
+    try {
+      const postsResponse = await getAllNews();
+      setPosts(postsResponse.data.results);
 
-    const topPostResponse = await getTopNews();
-    setTopPost(topPostResponse.data.news);
+      const topPostResponse = await getTopNews();
+      console.log("topPostResponse.data.news:", topPostResponse.data.news);
+      setTopPost(topPostResponse.data.news || {});
+    } catch (error) {
+      console.error("Erro ao obter dados:", error);
+    }
   }
 
   useEffect(() => {
