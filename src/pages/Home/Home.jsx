@@ -37,7 +37,7 @@ export function Home() {
       <HomeBody>
         {posts.map(
           (item, index) =>
-            // Verifica se o índice é maior que zero pra não incluiro Card no HomeHeader
+            // Verifica se o índice é maior que zero para não incluir o Card no HomeHeader
             index > 0 && (
               <Card
                 key={item.id}
