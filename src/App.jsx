@@ -1,11 +1,8 @@
-import { GlobalStyles } from "./GlobalStyles";
-import { Home } from "./pages/Home/Home";
-
+import {Outlet} from "react-router-dom";
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <Home />
+      <Outlet />
     </>
   );
 }

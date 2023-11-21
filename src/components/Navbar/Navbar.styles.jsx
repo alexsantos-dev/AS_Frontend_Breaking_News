@@ -12,12 +12,13 @@ export const Nav = styled.nav`
   background-color: #fff;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin-bottom: 4rem;
 `;
 
 export const ImageLogo = styled.img`
-  width: 8rem;
+  width: 12rem;
   height: 4rem;
+  margin-right: 7rem;
+  padding: 0 1rem;
   object-fit: cover;
   cursor: pointer;
 `;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Logo from "../../assets/LogoBN.png";
 import { Nav, ImageLogo, LoginBtn, Searcher } from "./Navbar.styles";
+import { Outlet } from "react-router-dom";
 
 export function Navbar() {
   const [onFocus, setOnFocus] = useState(false);
@@ -21,6 +22,7 @@ export function Navbar() {
         <ImageLogo src={Logo} alt="Logo Breaking News" />
         <LoginBtn>Entrar</LoginBtn>
       </Nav>
+      <Outlet />
     </>
   );
 }
