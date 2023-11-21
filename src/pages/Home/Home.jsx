@@ -26,7 +26,7 @@ export function Home() {
       <Navbar />
       <HomeHeader>
         <Card
-          top={true}
+          // top={true}
           title={topPost.title}
           text={topPost.text}
           banner={topPost.banner}
