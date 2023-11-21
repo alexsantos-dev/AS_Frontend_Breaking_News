@@ -6,15 +6,15 @@ import { getAllNews, getTopNews } from "../../services/news.services";
 import { HomeBody, HomeHeader } from "./Home.styles";
 
 export function Home() {
-  const [posts, setPosts] = useState([]);
+  const [news, setNews] = useState([]);
   const [topPost, setTopPost] = useState({});
 
   async function findPost() {
-    const postsResponse = await getAllNews();
-    setPosts(postsResponse.data.results);
+    const newsResponse = await getAllNews();
+    setNews(newsResponse.data.results);
 
-    const topPostResponse = await getTopNews();
-    setTopPost(topPostResponse.data.news);
+    const topNewsResponse = await getTopNews();
+    setTopPost(topNewsResponse.data.news);
   }
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export function Home() {
       <Navbar />
       <HomeHeader>
         <Card
-          // top={true}
+          top={true}
           title={topPost.title}
           text={topPost.text}
           banner={topPost.banner}
@@ -35,20 +35,16 @@ export function Home() {
         />
       </HomeHeader>
       <HomeBody>
-        {posts.map(
-          (item, index) =>
-            // Verifica se o índice é maior que zero para não incluir o Card no HomeHeader
-            index > 0 && (
-              <Card
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                banner={item.banner}
-                likes={item.likes}
-                comments={item.comments}
-              />
-            )
-        )}
+        {news.map((item) => (
+          <Card
+            key={item.id}
+            title={item.title}
+            text={item.text}
+            banner={item.banner}
+            likes={item.likes}
+            comments={item.comments}
+          />
+        ))}
       </HomeBody>
     </>
   );
