@@ -15,10 +15,8 @@ export const Nav = styled.nav`
 `;
 
 export const ImageLogo = styled.img`
-  width: 12rem;
+  width: 7rem;
   height: 4rem;
-  margin-right: 7rem;
-  padding: 0 1rem;
   object-fit: cover;
   cursor: pointer;
 `;
@@ -85,4 +83,15 @@ export const LoginBtn = styled.button`
   &:hover {
     background: #1cb6fc;
   }
+`;
+
+export const ErrorSpan = styled.span`
+  background-color: #ffaeae;
+  color: #9e0000;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
 `;
