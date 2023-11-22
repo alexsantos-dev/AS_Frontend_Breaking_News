@@ -38,7 +38,8 @@ export const Searcher = styled.div`
     font-weight: 100;
     padding: 0.62rem 1rem;
     background-color: #fff;
-    border: 1px solid transparent;
+    border: none;
+    /* border: 1px solid transparent; */
     width: 100%;
     border-radius: 0.4rem 0 0 0.4rem;
     caret-color: #1cb6fc;
@@ -53,16 +54,18 @@ export const Searcher = styled.div`
     }
   }
 
-  i {
-    z-index: 10;
+  button {
     border: none;
+    background-color: transparent;
     color: #1cb6fc;
     border-radius: 0 0.4rem 0.4rem 0;
     border: 1px solid transparent;
-    padding: 0.5rem 1rem 0.47rem 1rem;
+    padding: 0.62rem 1rem;
+    transition: 0.3s;
 
     &:hover {
       cursor: pointer;
+      background-color: #ededed;
     }
   }
 `;

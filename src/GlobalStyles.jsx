@@ -22,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   max-width: 100vw;
   height: 100vh;
   background-color: #f5f5f5;
