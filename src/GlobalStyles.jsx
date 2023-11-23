@@ -21,12 +21,15 @@ export const GlobalStyles = createGlobalStyle`
 
 html,
 body {
+  position: relative;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  max-width: 100vw;
-  height: 100vh;
+  max-width: 100%;
+  height: 100;
   background-color: #f5f5f5;
-
- 
+  margin: 3rem auto;
 } 
+
+
+
 `;

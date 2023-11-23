@@ -7,7 +7,10 @@ export const Nav = styled.nav`
   width: 100vw;
   position: fixed;
   padding: 0.7rem 2.5rem;
+  height: 72px;
+  right: 0;
   top: 0;
+  z-index: 1;
   background-color: #fff;
   box-shadow: rgba(50, 50, 105, 0.149) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
@@ -85,9 +88,11 @@ export const LoginBtn = styled.button`
 `;
 
 export const ErrorSpan = styled.span`
+  top: 0;
+  width: 100%;
   background-color: #ffaeae;
   color: #9e0000;
-  padding: 6.3rem 0 1rem 0;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;

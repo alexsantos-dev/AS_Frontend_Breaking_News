@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerResults = styled.section`
-  padding-top: 4rem;
+  top: 72px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -17,13 +17,13 @@ export const SearchNews = styled.div`
 `;
 
 export const TextResults = styled.div`
-  width: 100%;
+  width: 78%;
   display: flex;
   justify-content: left;
   align-items: center;
   /* background-color: #fff; */
-  padding: 3rem 9rem;
   border-radius: 0.4rem;
   color: #1cb6fc;
   font-weight: 100;
+  margin-top: 1rem;
 `;

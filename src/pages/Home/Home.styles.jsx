@@ -9,7 +9,6 @@ export const HomeBody = styled.section`
 `;
 
 export const HomeHeader = styled.section`
-  padding-top: 6rem;
   width: 80%;
   display: flex;
   margin: 1rem auto;
