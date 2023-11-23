@@ -5,13 +5,12 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  /* position: fixed; */
+  position: fixed;
   padding: 0.7rem 2.5rem;
   top: 0;
-  right: 0;
   background-color: #fff;
-  z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(50, 50, 105, 0.149) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 `;
 
 export const ImageLogo = styled.img`
@@ -88,7 +87,7 @@ export const LoginBtn = styled.button`
 export const ErrorSpan = styled.span`
   background-color: #ffaeae;
   color: #9e0000;
-  padding: 1rem;
+  padding: 6.3rem 0 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;

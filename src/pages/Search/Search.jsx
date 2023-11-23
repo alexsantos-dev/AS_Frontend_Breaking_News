@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { searchNews } from "../../services/news.services";
 import { Card } from "../../components/Card/Card";
-import { SearchNews, ContainerResults } from "./Search.styles";
+import { SearchNews, ContainerResults, TextResults } from "./Search.styles";
 
 export function Search() {
   const { title } = useParams();
@@ -26,6 +26,15 @@ export function Search() {
   return (
     <>
       <ContainerResults>
+        <TextResults>
+          <span>
+            {post.length
+              ? `Encontramos ${post.length} ${
+                  post.length > 1 ? "resultados" : "resultado"
+                } para '${title}'`
+              : `Nenhum resultado encontrado`}
+          </span>
+        </TextResults>
         <SearchNews>
           {post.map((item) => (
             <Card
