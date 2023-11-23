@@ -5,7 +5,7 @@ import { Card } from "../../components/Card/Card";
 import { SearchNews, ContainerResults, TextResults } from "./Search.styles";
 
 export function Search() {
-  const { title } = useParams();
+  const { title } = useParams([]);
   const [post, setPost] = useState([]);
 
   async function search() {
@@ -28,7 +28,7 @@ export function Search() {
       <ContainerResults>
         <TextResults>
           <span>
-            {post.length
+            {post.length !== 0
               ? `Encontramos ${post.length} ${
                   post.length > 1 ? "resultados" : "resultado"
                 } para '${title}'`

@@ -8,6 +8,7 @@ import { Search } from "./pages/Search/Search.jsx";
 import { GlobalStyles } from "./GlobalStyles.jsx";
 import { RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage.jsx";
+import { Authentication } from "./pages/Authencation/Authentication.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         element: <Search />,
       },
     ],
+  },
+  {
+    path: "/auth",
+    element: <Authentication />,
   },
 ]);
 
